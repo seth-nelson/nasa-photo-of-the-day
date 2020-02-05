@@ -2,6 +2,9 @@ import React from "react";
 import "./App.css";
 
 function App() {
+  //set useState
+  const [images, getImages] = useState()
+
   return (
     <div className="App">
       <p>
