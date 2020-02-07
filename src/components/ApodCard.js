@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import LikeButton from "./LikeButton";
 import ImageInfo from "./ImageInfo";
-import Title from "./Title";
 import axios from "axios";
 import "./ApodCard.css";
 
