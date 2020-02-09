@@ -2,6 +2,14 @@ import React, { useState, useEffect } from "react";
 import ImageInfo from "./ImageInfo";
 import axios from "axios";
 import "./ApodCard.css";
+import styled from "styled-components";
+
+const PostContainer = styled.div`
+    width: 80%;
+    display: flex;
+    justify-content: center;
+`;
+
 
 const ApodCard = props => {
     const [nasaImg, setNasaImg] = useState('');
@@ -21,9 +29,9 @@ const ApodCard = props => {
         }, [])
 
     return (
-        <div className="photo-post-container">
+        <PostContainer className="photo-post-container">
         <ImageInfo nasaImg={nasaImg} /> 
-        </div>
+        </PostContainer>
     )};
 
     export default ApodCard;
